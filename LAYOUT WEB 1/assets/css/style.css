@@ -134,19 +134,87 @@ header{
 }
 
 .default .sectionBory{
-    background-color: yellow;
     margin: auto;
     max-width: 1140px;
 }
 .default.ligth{
     background-color: #f7f7f7;
 }
-.default.ligth .sectionTitle{
+.default.ligth .sectionTitle,
+.default.ligth .sectionBory{
     color: black;
 }
+
 .default.dark{
     background-color: black;
 }
-default.dark .sectionTitle{
+.default.dark .sectionTitle,
+.default.dark .sectionBory{
     color: white;
+}
+.sectionBory{
+    display: flex;
+    justify-content: space-between;
+}
+.sectionBory .decription{
+    width: 500px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column
+}
+.button{
+    display: inline-block;
+    background-color: #b28756;
+    color: white;
+    font-size: 13px;
+    font-weight: 600px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 15px;
+    border-radius: 20px;
+
+
+}
+.sectionBory .card{
+    width: 500px;
+    height: 250px;
+    text-align: center;
+}
+.card img{
+    width: 450px;
+    box-shadow: 0px 5px 10px #333;
+}
+.descriptionInfo p{
+    font-size: 14px;
+    line-height: 25px;
+}
+.sectionServices{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-self: flex-start;
+}
+.areaBar{
+    flex: 1;
+    text-align: center;
+    border-left: 1px yellow solid;
+    width: 100px;
+    padding: 15px;
+    
+}
+.areaBar h4{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.areaBar p{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999;
+}
+
+.areaBar.direta{
+    border-right: #b28756 1px solid;
 }
