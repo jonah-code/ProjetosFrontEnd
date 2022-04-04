@@ -218,3 +218,47 @@ header{
 .areaBar.direta{
     border-right: #b28756 1px solid;
 }
+
+.sectionBory.colum{
+    flex-direction: column;
+}
+
+
+.sectionProjects{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectionProjectsFilters{
+    border: 1px solid #999;
+    background-color: #EEE;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.sectionProjectsFilters ul, 
+.sectionProjectsFilters li{
+    list-style: none;
+}
+.sectionProjectsFilters li{
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: solid 1px #CCC ;
+    color: #555;
+    border-bottom:3px solid #EEE ;
+    cursor: pointer;
+}
+.sectionProjectsFilters li:hover,
+.sectionProjectsFilters li.active{
+    border-bottom:3px solid #828756 ;
+    
+    
+}
+.sectionProjectsFilters li:first-child{
+    border-left:none;
+}
+
